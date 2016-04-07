@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF6A6A"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/ll_user_left_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.ruanshuo.news.view.CircleImageView
+            android:id="@+id/civ_leftmenu_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+           
+            android:src="@drawable/default_round_head" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <ListView
+        android:background="#454545"
+        android:id="@+id/lv_leftmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+       
+        android:paddingLeft="20dp" >
+    </ListView>
+
+</LinearLayout>

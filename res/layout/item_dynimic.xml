@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.ruanshuo.news.view.CircleImageView
+            android:id="@+id/civ_dynimic"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/tv_uname_dynimic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_time_dynimic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_dynimic_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_1_dynimic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_2_dynimic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_3_dynimic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_share_dynimic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp"
+            android:src="@drawable/share" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_praise_dynimic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_praise_num_dynimic"
+            android:background="@null"
+            android:paddingLeft="0dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/praise" />
+
+        <TextView
+            android:id="@+id/tv_praise_num_dynimic"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgbtn_reply_dynimic"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_reply_dynimic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/comment" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_reply_dynimic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_reply_dynimic"
+        android:padding="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/tv_reply_dynimic_bg"
+        android:hint="我也说一句"
+        android:paddingLeft="1dp"
+        android:paddingRight="10dp" />
+
+</LinearLayout>

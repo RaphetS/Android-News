@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue_normal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_back_dynimic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="社区动态"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_add_dynimic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="5dp"
+            android:src="@drawable/add_dynimic_selector" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_no_data_dynimic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="暂无动态"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:visibility="gone" />
+
+    <me.maxwin.view.XListView
+        android:id="@+id/xlv_dynimic"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="10dp" >
+    </me.maxwin.view.XListView>
+
+    <LinearLayout
+        android:id="@+id/ll_send_reply_dynimic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_comment_shape"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/et_reply_dynimic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/blue_normal" />
+
+        <Button
+            android:id="@+id/btn_reply_dynimic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="5dp"
+            android:text="发送"
+            android:textColor="@color/blue_normal" />
+    </LinearLayout>
+
+</LinearLayout>

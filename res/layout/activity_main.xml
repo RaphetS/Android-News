@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue_normal" >
+
+        <com.ruanshuo.news.view.CircleImageView
+            android:id="@+id/civ_left_sliding"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+          
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/default_round_head" />
+
+        <TextView
+            android:id="@+id/tv_title_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+    <com.ruanshuo.news.view.NoScrollViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" >
+    </com.ruanshuo.news.view.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            style="@style/rb_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_img_hot_selector"
+            android:text="@string/rb_news" />
+
+        <RadioButton
+            android:id="@+id/rb_hot"
+            style="@style/rb_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/rb_img_news_selector"
+            android:text="@string/rb_hot" />
+
+        <RadioButton
+            android:id="@+id/rb_community"
+            style="@style/rb_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/rb_img_community_selector"
+            android:text="@string/rb_community" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/rb_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/rb_img_setting_selector"
+            android:text="@string/rb_setting" />
+    </RadioGroup>
+
+</LinearLayout>

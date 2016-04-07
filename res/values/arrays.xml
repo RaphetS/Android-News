@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string-array name="mylist">
+        <item>我的评论</item>
+        <item>我的消息</item>
+        <item>我的收藏</item>
+        <item>退出登录</item>
+    </string-array>
+
+</resources>

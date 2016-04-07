@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue_normal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_back_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="评论列表"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_no_data_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="暂无评论"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@color/theme_divider"
+        android:dividerHeight="0.5dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_comment_shape"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/et_comment_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="评论" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/blue_normal" />
+
+        <Button
+            android:id="@+id/btn_send_comment_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="5dp"
+            android:text="发送"
+            android:textColor="@color/blue_normal" />
+    </LinearLayout>
+
+</LinearLayout>

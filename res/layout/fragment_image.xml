@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radiogroupImg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbtnJingxuan"
+            style="@style/common_top"
+            android:checked="true"
+            android:text="精选" />
+
+        <RadioButton
+            android:id="@+id/rbtnMeitu"
+            style="@style/common_top"
+            android:text="美图" />
+
+        <RadioButton
+            android:id="@+id/rbtnQutu"
+            style="@style/common_top"
+            android:text="趣图" />
+
+        <RadioButton
+            android:id="@+id/rbtnStory"
+            style="@style/common_top"
+            android:text="体育" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/category_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radiogroup"
+        android:background="#ffdddddd" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radiogroupImg" />
+
+</RelativeLayout>

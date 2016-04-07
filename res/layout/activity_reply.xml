@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue_normal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_back_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="详情"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.ruanshuo.news.view.CircleImageView
+            android:id="@+id/civ_comment_reply"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_round_head" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/tv_uname_comment_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_time_comment_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_uname_comment_reply"
+                    android:textColor="@color/gray"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/imgBtn_praise_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tv_praise_num_reply"
+                    android:background="@null"
+                    android:src="@drawable/praise" />
+
+                <TextView
+                    android:id="@+id/tv_praise_num_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_comment_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_uname_comment"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_no_data_reply"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="暂无回复"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_reply"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:paddingLeft="50dp" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_send_reply_reply"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/send_comment_shape"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/et_reply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="回复" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/blue_normal" />
+
+        <Button
+            android:id="@+id/btn_send_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="5dp"
+            android:text="发表"
+            android:textColor="@color/blue_normal" />
+    </LinearLayout>
+
+</LinearLayout>
